@@ -1,15 +1,15 @@
 <?php
-
-echo "voer gewenste tafel in: ";
-$tafel = readline();
-echo "voer begin van tafels in: ";
+//de user input lezen.
+echo "Enter your table: ";
+$table = readline();
+echo "Enter begin of table: ";
 $begin = readline();
-echo "voer eind toe van tafels: ";
+echo "Enter end of table: ";
 $end = readline();
-
-for ($counter = $begin; $counter < $end;$counter++) {
-    $product = $counter * $tafel;
-    echo $counter."x".$end."=".$product."\n";
+//de voor loop die het begin en eind calculeren.
+for ($counter = $begin; $counter <= $end;$counter++) {
+    $product = $counter * $table;
+    echo $counter." x ".$table." = ".$product."\n";
 }
 
 ?>
