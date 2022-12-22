@@ -12,7 +12,6 @@
 
 $randomtxt = fopen("random.txt","r");
 $max = 0;
-
 while (!(feof($randomtxt))) {
     $line = fgets($randomtxt);
     echo $line;
