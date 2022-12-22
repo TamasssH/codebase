@@ -11,7 +11,7 @@ while ($stop != "stop") {
     echo "Enter end of table: ";
     $end = readline();
     //de voor loop om het antwoord te printen.
-    if ($begin > $end || !is_numeric($table)) {
+    if ($begin > $end && !is_numeric($table)) {
         exit("Je kan geen begin getal groter dan het eind getal invullen!");
     }
     for ($counter = $begin; $counter <= $end;$counter++) {
